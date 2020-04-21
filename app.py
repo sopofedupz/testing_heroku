@@ -22,9 +22,18 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
+from flask_sqlalchemy import SQLAlchemy
+
 engine = create_engine("sqlite:///backpackers_index.db",
                         echo=True,
                         connect_args={"check_same_thread": False})
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///backpackers_index.sqlite"
+
+# Remove tracking modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
 Base = automap_base()
