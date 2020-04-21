@@ -1,0 +1,254 @@
+body { 
+    overflow-x: hidden;
+}
+
+.container {
+    position: fixed;
+    left: 15;
+    right:15;
+    align-content: center;
+}
+  
+h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin-right:34px;
+    margin-left:30px;
+    margin-top:20px;
+}
+
+header {
+    position: relative;
+    /* background-color: black; */
+    height: 55vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+header .container {
+    position: relative;
+    z-index: 2;
+}
+  
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.nav-link {
+    font-size: large;
+}
+
+#fixedElement {
+    position:sticky;
+    top:5px;
+    width:100%;
+    z-index:100;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 0.25rem;
+}
+
+th {
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+#dd {
+    background: white;
+    position: sticky;
+    top: 0;
+    /* box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); */
+}
+
+
+.legend {
+    padding: 10px;
+    font-family: Sanchez, serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #555;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+  
+.legend .coming-soon {
+    color: #007dff;
+}
+
+.legend .empty {
+    color: #f4ba48;
+}
+
+.legend .out-of-order {
+    color: #ec8a2e;
+}
+
+.legend .low {
+    color:  #a0353a;
+}
+
+#tempGauge {
+    height: 100%;
+    width: 100%;
+    min-height: 150px;
+}
+
+#precGauge {
+    height: 100%;
+    width: 100%;
+    min-height: 150px;
+}
+
+.zc-ref {
+    display: none;
+}
+
+.range {
+    position: relative;
+    width: 750px;
+    height: 5px;
+  }
+  
+  .range input {
+    width: 100%;
+    position: absolute;
+    top: 2px;
+    height: 0;
+    -webkit-appearance: none;
+  }
+  .range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    margin: -8px 0  0;
+    border-radius: 50%;
+    background: #37adbf;
+    cursor: pointer;
+    border: 0 !important;
+  }
+  .range input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    margin: -8px 0  0;
+    border-radius: 50%;
+    background: #37adbf;
+    cursor: pointer;
+    border: 0 !important;
+  }
+  .range input::-ms-thumb {
+    width: 18px;
+    height: 18px;
+    margin: -8px 0  0;
+    border-radius: 50%;
+    background: #37adbf;
+    cursor: pointer;
+    border: 0 !important;
+  }
+  .range input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #b2b2b2;
+  }
+  .range input::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #b2b2b2;
+  }
+  .range input::-ms-track {
+    /* width: 100%; */
+    height: 2px;
+    cursor: pointer;
+    background: #b2b2b2;
+  }
+  .range input:focus {
+    background: none;
+    outline: none;
+  }
+  .range input::-ms-track {
+    /* width: 100%; */
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  .range-labels {
+    margin: 18px -41px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .range-labels li {
+    position: relative;
+    float: left;
+    width: 69.00px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .range-labels li::before {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    left: 0;
+    content: "";
+    margin: 0 auto;
+    width: 9px;
+    height: 9px;
+    background: #b2b2b2;
+    border-radius: 50%;
+  }
+  .range-labels .active {
+    color: #37adbf;
+  }
+  .range-labels .selected::before {
+    background: #37adbf;
+  }
+  .range-labels .active.selected::before {
+    display: none;
+  }

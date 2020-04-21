@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backpackers Index 2020</title>
+  
+  <!-- Bootstrap -->
+  
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">    
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel= "stylesheet" type= "text/css" href= "static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                <h1 class="display-3">Backpackers Index 2020</h1>
+                <h1 style="font-size: 30px;" class="lead mb-0">Top 137 Global Destinations for Backpackers and Travel Lovers</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--navigation bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Team.html">Meet the Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="margin-left: 30px; justify-content: center;" class="container-fluid">
+        <div style="justify-content: center; margin-top: 80px; margin-bottom: 20px" class="row">
+            <div style="height: 200px;" class="col-sm-12 col-md-12">
+                <div class="span6" style="float: none">
+                    <p class="lead">The team has worked to pull together some information of the top 137 global destinations that backpackers and travel lovers can travel to after covid-19 is over. The information were obtained and scraped from <a style="font-size: 20px;" href="https://www.priceoftravel.com/world-cities-by-price-backpacker-index/" target="_blank">PriceofTravel</a>. 
+                    Per <a style="font-size: 20px;" href="https://www.priceoftravel.com/world-cities-by-price-backpacker-index/" target="_blank">PriceofTravel</a>, the cities are ranked using a daily total value calculation, which includes:
+                    <br>
+                    <ul class="lead">
+                        <li>a dorm bed at a good and cheap hostel</li>
+                        <li>3 budget meals</li>
+                        <li>2 public transportation rides</li>
+                        <li>1 paid cultural attraction (please refer to <a id="incontent" style="font-size: 20px;" href="https://www.priceoftravel.com/world-cities-by-price-backpacker-index/" target="_blank">PriceofTravel</a> for more information)</li>
+                        <li>3 cheap beers (as an "entertainment fund")</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="justify-content: center;" class="row">
+            <div id = "fixed_table_head" style="padding: 40px;" class="container-fluid">
+                <input class="btn btn-secondary disabled" type='button' onclick='tableFromJson()' 
+                    value='Click to see the list of the top 137 global destinations' />
+                    
+                <p style="margin-top: 40px;" id='showData'></p>
+            </div>
+
+            <script src="static/js/table.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #373a3c; border-color: white; " class="footer">
+        <div class="row">
+            <div class="col-md-5">
+                <p style="color: white; text-align: left; margin-left: 30px; margin-top: 10px">Source: <a style="color: white;" href="https://www.priceoftravel.com/world-cities-by-price-backpacker-index/" target="_blank">PriceofTravel</a></p>
+            </div>
+            <div class="col-md-7">
+                <p style="color: white; text-align: left; margin-top: 10px"><a style="color: white" href="Team.html">© 2020 Copyright -> Meet the Team</a></p>
+            </div>
+        </div> 
+    </div>
+    
+
+
+
+
+</body>
+
+</html>
+
+

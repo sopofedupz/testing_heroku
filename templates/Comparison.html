@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Backpackers Index 2020 - Food and Lodging Comparison</title>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel= "stylesheet" type= "text/css" href= "static/css/style.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+            <h1 class="display-3">Backpackers Index 2020</h1>
+            <h1 style="font-size: 30px;" class="lead mb-0">Food and Lodging Comparison</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--navigation bar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">      
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Team.html">Meet the Team</a>
+            </li>
+        </ul>
+    </div>
+</nav>              
+
+  <select class="dropdown" id="dd" style="margin-top: 10px; margin-left: 10px; float: left;">
+    <option value="" selected="selected">Select Comparison</option>
+    <option value="budget_breakfast">Budget Breakfast</option>
+    <option value="budget_lunch">Budget Lunch</option>
+    <option value="budget_dinner">Budget Dinner</option>
+    <option value="one_star">1-Star Hotel</option>
+    <option value="two_star">2-Star Hotel</option>
+    <option value="three_star">3-Star Hotel</option>
+    <option value="four_star">4-Star Hotel</option>
+    <option value="five_star">5-Star Hotel</option>
+    <option value="hostel">Hostel</option>
+  </select>
+
+  <div id="chartContainer1" style="height: 600px; width: 85%; padding: 50px; margin-left: 100px;"></div>
+  <div id="chartContainer2" style="height: 600px; width: 85%; margin-top: 100px; margin-bottom: 200px; padding: 50px; margin-left: 100px;"></div>
+  <script src="/static/js/canvasjs.min.js"></script>
+  <script src="/static/js/comparison.js"></script>
+  
+
+  <!-- footer -->
+  <div style="position: fixed; left: 0; bottom: 35px; width: 100%; background-color: whitesmoke;" class="footer">
+    <div class="row">
+      <div class="col-md-12">
+        <p style="color: #808080;; text-align: left; margin-left: 30px;">Please hover over bar to view city, highest and/or lowest price range</p>
+      </div>
+    </div>
+  </div>
+    
+  <div style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #373a3c; border-color: white; " class="footer">
+    <div class="row">
+        <div class="col-md-5">
+            <p style="color: white; text-align: left; margin-left: 30px; margin-top: 10px">Source: <a style="color: white;" href="https://www.priceoftravel.com/world-cities-by-price-backpacker-index/" target="_blank">PriceofTravel</a></p>
+        </div>
+        <div class="col-md-7">
+          <p style="color: white; text-align: left; margin-top: 10px"><a style="color: white" href="Team.html">© 2020 Copyright -> Meet the Team</a></p>
+        </div>
+    </div> 
+</div>
+
+</body>
+                
+</html>
